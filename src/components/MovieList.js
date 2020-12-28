@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectmovie } from '../actions/index';
+import { selectMovie } from '../actions/index';
 
 const MovieList = (props) => {
   const listItems = props.movies.map((movie) => {
@@ -26,8 +26,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = () => {
-  selectMovie: selectMovie;
+const mapDispatchToProps = {
+  selectMovie: selectMovie,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovieList);

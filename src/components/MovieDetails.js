@@ -3,11 +3,13 @@ import { connect } from 'react-redux';
 
 const MovieDetails = (props) => {
   if (!props.selectedMovie) {
-    <div className='details-container' style={{ width: '70%' }}>
-      <h2>Movie</h2>
-      <div className='properties'></div>
-      <p>Select Movie</p>
-    </div>;
+    return (
+      <div className='details-container' style={{ width: '70%' }}>
+        <h2>Movie</h2>
+        <div className='properties'></div>
+        <p>Select Movie</p>
+      </div>
+    );
   } else {
     return (
       <div className='details-container' style={{ width: '70%' }}>

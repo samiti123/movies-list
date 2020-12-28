@@ -13,7 +13,7 @@ const moviesReducer = () => {
     },
   ];
 };
-
+// state = initialState or state = null
 const selectedMovieReducer = (state = null, action) => {
   switch (action.type) {
     case 'MOVIE_SELECTED':
